@@ -1,0 +1,9 @@
+[h:d20Roll=d20]
+[h:AttackRoll=d20Roll+4]
+[h:DamageRoll=1d4+2]
+[h:CritDamage=DamageRoll+DamageRoll]
+Bite:
+[r, switch(d20Roll):
+case 6: "CRITICAL HIT! "+CritDamage+" damage.";
+case 1: "CRITICAL FUMBLE!";
+default: AttackRoll+" vs AC. "+DamageRoll+" damage."]
