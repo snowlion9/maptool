@@ -4,6 +4,6 @@
 [h:CritDamage=DamageRoll+DamageRoll]
 Bite:
 [r, switch(d20Roll):
-case 6: "CRITICAL HIT! "+CritDamage+" damage.";
+case 20: "CRITICAL HIT! "+CritDamage+" damage.";
 case 1: "CRITICAL FUMBLE!";
 default: AttackRoll+" vs AC. "+DamageRoll+" damage."]
