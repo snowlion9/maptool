@@ -1,0 +1,3 @@
+[h:HP = min(HP+10, MaxHP)]
+[h:bar.Health = HP / MaxHP]
+  regenerates 10 hit points. 
